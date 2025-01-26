@@ -64,7 +64,7 @@ const Homepage = () => {
             borderRadius: "12px 12px 12px 12px",
             
             background: "#D4C2FFB2",
-            border: "1px solid #6B35E8",
+            // border: "1px solid #6B35E8",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -91,7 +91,7 @@ const Homepage = () => {
           <div className="h-[15px]"></div>
           <div
             style={{
-              width: "260px",
+              width: "220px",
               height: "40px",
               background: "#6B35E8",
               display: "flex",
