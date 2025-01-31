@@ -1,22 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Homepage from './Homepage'
-import AdAnalysis from './AdAnalysis'
-import Uploading from './Uploading'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Uploading from "./Uploading";
+import AdAnalysis from "./AdAnalysis";
+import DownloadPDF from "./DownloadPDF";
+const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Uploading />} />
         <Route path="/ad-analysis" element={<AdAnalysis />} />
-        <Route path="/uploading" element={<Uploading />} />
+        <Route path="/download-pdf" element={<DownloadPDF />} />
       </Routes>
     </Router>
-  )
-}
+  );
+};
 
-export default App
+export default App;
